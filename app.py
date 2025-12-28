@@ -13,12 +13,13 @@ X = df.iloc[:,:-3]
 y = df.iloc[:,-1]
 
 st.sidebar.title('🏡 Select House feature')
-st.sidebar.image('https://i.pinimg.com/originals/93/c7/44/93c744bcde1780c94bb1d3f03991f8a7.gif')
+st.sidebar.image('https://i.pinimg.com/originals/46/cb/a9/46cba9f93a3d437db6d42f4bcd1a5f5f.gif')
 all_value = []
 for i in X:
   ans = st.sidebar.slider(f'Select {i} value')
   all_value.append(ans)
 
 st.write(all_value)
+
 
 
