@@ -30,7 +30,8 @@ scaled_X = scaler.fit_transform(X)
 final_value = scaler.transform([all_value])
 
 model = st.cache(RandomForestRegressor)()
-model.fit(X,y)
+
+st.cache(model.fit(X,y))
 house_price = model.predict(final_value)[0]
 
 with st.spinner('Predicting House price'):
@@ -39,6 +40,7 @@ msg = f'''House Price is: ${round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Design & Developed by: ANSH MISHRA**''')
+
 
 
 
