@@ -5,6 +5,6 @@ import pandas as pd
 import time
 from sklearn.datasets import fetch_california_housing
 
-
 st.title('🏘️ HOUSE PRICE PRIDICTION USING ML')
+st.image('https://i.pinimg.com/originals/93/c7/44/93c744bcde1780c94bb1d3f03991f8a7.gif')
 
